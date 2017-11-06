@@ -1,0 +1,22 @@
+<!-- <h1>Questions#answer</h1>
+<p>Find me in app/views/questions/answer.html.erb</p> -->
+
+<!-- TODO: display question from the student + the answer from the coach -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Stupid coach</title>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="text-center">
+      <h2><%= @question %></h2>
+      <p> - You </p>
+      <h2><%= @coach_answer %></h2>
+      <p> - Your coach </p>
+      </br>
+      <%= link_to "Ask a new question", ask_path %>
+    </div>
+  </body>
+</html>
